@@ -138,7 +138,7 @@
             if notify then
                 local player = vRP.getUserSource(user_id)
                 if player ~= nil then
-                    TriggerClientEvent("vrp_inventoryhud:notify", player, {name = idname, label = vRP.getItemName(idname), count = amount }, "Added")
+                    TriggerClientEvent("vrp_inventoryhud:notify", player, {name = idname, label = vRP.getItemName(idname), count = amount }, "اضافة")
                 end
             end
         end
@@ -163,7 +163,7 @@
                 if notify then
                     local player = vRP.getUserSource(user_id)
                     if player ~= nil then
-                    TriggerClientEvent("vrp_inventoryhud:notify", player, {name = idname, label = vRP.getItemName(idname), count = amount }, "Given")
+                    TriggerClientEvent("vrp_inventoryhud:notify", player, {name = idname, label = vRP.getItemName(idname), count = amount }, "اعطاء")
                     end
                 end
 
@@ -175,7 +175,7 @@
                     if player ~= nil then
                         local entry_amount = 0
                         if entry then entry_amount = entry.amount end
-                            TriggerClientEvent("vrp_inventoryhud:notify", player, {name = idname, label = vRP.getItemName(idname), count = amount-entry_amount }, "Missing")
+                            TriggerClientEvent("vrp_inventoryhud:notify", player, {name = idname, label = vRP.getItemName(idname), count = amount-entry_amount }, "مفقود")
                     end
                 end
             end
